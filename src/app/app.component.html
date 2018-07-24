@@ -1,15 +1,14 @@
-<div class='main-container'  fxLayout="column" >
-  <header class='mat-elevation-z15'>
-      <mat-toolbar color="primary">
-          <span>IKA Account Management</span>
-        </mat-toolbar>
-  </header>
-  <div class="main">
-     <router-outlet> </router-outlet>
-  </div>
-<footer class='mat-elevation-z15'>
-    <mat-card>
 
-    </mat-card>
-</footer>
+
+<div class='wrapper d-flex'>
+  <!-- Sidebar -->
+  <div id="sidebar">
+     <app-side-nav></app-side-nav>
+  </div>
+
+  <!-- Page Content -->
+  <div id="content">
+  <app-content></app-content>
+  </div>
 </div>
+

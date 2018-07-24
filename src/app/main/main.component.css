@@ -1,0 +1,15 @@
+nav {
+  background-color: #71b6f9 !important;
+  color: #fff;
+}
+.home-icon {
+  font-size: 30px;
+}
+.header-label {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  bottom: 3px;
+  color: #fff;
+  text-decoration: none;
+}
