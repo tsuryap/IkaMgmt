@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-content',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
+  showSideNav: boolean;
+  @Output() valueChange = new EventEmitter();
   constructor() { }
-
   ngOnInit() {
+  }
+
+  onClickExpand() {
+    this.showSideNav = !this.showSideNav;
+    this.valueChange.emit(this.showSideNav);
   }
 
 }

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  hideNav;
+  toogleSideNav(value) {
+     this.hideNav = value;
+  }
 }

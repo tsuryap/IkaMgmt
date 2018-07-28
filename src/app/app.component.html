@@ -2,13 +2,13 @@
 
 <div class='wrapper d-flex'>
   <!-- Sidebar -->
-  <div id="sidebar">
+  <div id="sidebar" [ngClass]='{active: hideNav}'>
      <app-side-nav></app-side-nav>
   </div>
 
   <!-- Page Content -->
   <div id="content">
-  <app-content></app-content>
+  <app-content (valueChange)='toogleSideNav($event)'></app-content>
   </div>
 </div>
 

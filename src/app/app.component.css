@@ -8,7 +8,7 @@
   min-width: 250px;
   max-width: 250px;
   min-height: 100vh;
-  background-color: #24262d;
+  background-color:#f7f7f7;
 }
 
 #sidebar.active {
@@ -18,7 +18,7 @@
 #content {
   width: 100%;
   height: 100%;
-  background-color: #253138;
+  background-color: #FFF;
 }
 @media (max-width: 768px) {
   #sidebar {
